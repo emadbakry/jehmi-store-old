@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jehmi</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body id="app">
+		<section class="inner">
+			<!-- for vedges -->
+			<div class="vedg flex">
+				<div class="input-outer">
+					<label for="vedg">خضار</label>
+					<input type="number" name="vedg" id="vedg" />
+					<span>ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for tenant -->
+					<span class="p-out">0</span>
+					<span data-note="للمستأجر">ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for jehmi -->
+					<span class="p-in">0</span>
+					<span data-note="للمالك">ريال</span>
+				</div>
+				<div class="btn-print">
+					<button id="print-vedg" data-name="خضار" type="button">طباعة</button>
+				</div>
+			</div>
+			<!-- for bakery -->
+			<div class="bakery flex">
+				<div class="input-outer">
+					<label for="bakery">مخبز</label>
+					<input type="number" name="vedg" id="bakery" />
+					<span>ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for tenant -->
+					<span class="p-out">0</span>
+					<span data-note="للمستأجر">ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for jehmi -->
+					<span class="p-in">0</span>
+					<span data-note="للمالك">ريال</span>
+				</div>
+				<div class="btn-print">
+					<button id="print-bakery" data-name="مخبز" type="button">طباعة</button>
+				</div>
+			</div>
+			<!-- for diary -->
+			<div class="dairy flex">
+				<div class="input-outer">
+					<label for="bakery">أجبان</label>
+					<input type="number" name="vedg" id="dairy" />
+					<span>ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for tenant -->
+					<span class="p-out">0</span>
+					<span data-note="للمستأجر">ريال</span>
+				</div>
+				<div class="input-outer">
+					<!-- for jehmi -->
+					<span class="p-in">0</span>
+					<span data-note="للمالك">ريال</span>
+				</div>
+				<div class="btn-print">
+					<button id="print-dairy" data-name="أجبان" type="button">طباعة</button>
+				</div>
+			</div>
+			<!-- total section -->
+			<div class="total flex">
+				<div class="input-outer">
+					<span>المجموع</span>
+					<span class="total-entered">0</span>
+					<span>ريال</span>
+				</div>
+				<div class="input-outer">
+					<span>المجموع للمستأجرين</span>
+					<span class="total-out">0</span>
+					<span>ريال</span>
+				</div>
+				<div class="input-outer">
+					<span>المجموع للمالك</span>
+					<span class="total-in">0</span>
+					<span>ريال</span>
+				</div>
+			</div>
+			<!-- cach section -->
+			<div class="total flex">
+				<div class="input-outer">
+					<div class="totalOut1">
+						<label for="fives">ريالات</label>
+
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+					<div class="totalOut5">
+						<label for="fives">خمسات</label>
+
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+					<div class="totalOut10">
+						<label for="tens">عشرات</label>
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+					<div class="totalOut50">
+						<label for="hundreds">خمسينات</label>
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+					<div class="totalOut100">
+						<label for="hundreds">مئات</label>
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+					<div class="totalOut500">
+						<label for="hundreds">خمس ميات</label>
+						<span>X</span>
+						<span class="unit"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="errors">
+			<span></span>
+		</div>
+		<div class="printAll btn">
+			<button class="btn" type="button">طباعة الكل</button>
+		</div>
+		<div class="toPrint"></div>
+		<script src="./index.js"></script>
+	</body>
+</html>
