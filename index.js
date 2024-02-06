@@ -1,8 +1,8 @@
 let percentage = {
-	// 10%
+	// 12%
 	vedg: 0.88,
-	// 15%
-	bakery: 0.85,
+	// 13%
+	bakery: 0.87,
 	// 12%
 	dairy: 0.88,
 };
@@ -152,11 +152,7 @@ let printBtns = document.querySelectorAll(".btn-print button");
 // listener
 printBtns.forEach((btn) => {
 	btn.addEventListener("click", () => {
-		print_out(
-			btn.dataset.name,
-			btn.parentElement.parentElement.querySelector(".p-out").textContent,
-			new Date().toLocaleDateString()
-		);
+		print_out(btn.dataset.name, btn.parentElement.parentElement.querySelector(".p-out").textContent, new Date().toLocaleDateString());
 	});
 });
 
