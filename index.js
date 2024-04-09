@@ -1,8 +1,8 @@
 let percentage = {
 	// 12%
 	vedg: 0.88,
-	// 7%
-	bakery: 0.93,
+	// 13%
+	bakery: 0.87,
 	// 12%
 	dairy: 0.88,
 };
